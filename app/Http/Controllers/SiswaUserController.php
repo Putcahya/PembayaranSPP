@@ -34,6 +34,7 @@ class SiswaUserController extends Controller
         } else {
             $password = request()->password;
         }
+        
         if (request()->new_email) {
             $email= request()->new_email;
         } else {

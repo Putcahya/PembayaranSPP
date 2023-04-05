@@ -25,7 +25,8 @@ class AdminController extends Controller
         $data['petugas']= User::where('level', 'Petugas')->count();
         $data['siswa']= User::where('level', 'Siswa')->count();
         $data['pembayaran']= Pembayaran::all()->count();
-        $data['log']=Log::all();
+        $data['log1']=Log::where('aksi','create')->orWhere('aksi','update')->orWhere('aksi','delete')->orderBy('id', 'DESC')->get();
+        $data['log2']=Log::where('aksi', 'Bayar SPP')->orderBy('id', 'DESC')->get();
         return view('admin.viewDashboard', $data);
     }
     public function viewProfile($id)

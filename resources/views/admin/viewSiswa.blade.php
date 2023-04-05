@@ -221,7 +221,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-8">
-                                <input id="level" type="hidden" value="petugas"
+                                <input id="level" type="hidden" value="siswa"
                                     class="form-control @error('level') is-invalid @enderror" name="level" required
                                     autocomplete="new-level">
 
@@ -237,7 +237,7 @@
                                 class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-8">
-                                <input id="password" type="hidden" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="new-password" value="{{ $item->password }}">
+                                <input id="password" type="hidden" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="password" value="{{ $item->password }}">
                                 <input id="new_password" type="password" class="form-control @error('password') is-invalid @enderror" name="new_password" autocomplete="new-password">
                                 <small class="text-danger">*Reset Password Siswa</small>
                                 @error('password')

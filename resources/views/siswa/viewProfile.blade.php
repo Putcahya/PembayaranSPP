@@ -40,38 +40,6 @@
                 <div class="card p-3">
                     <h3 class="text-center">Form Ubah Password</h3>
                     <hr>
-
-                    {{-- <form method="POST" action="/siswa/ubahProfile/{{ $item->id }}">
-                        @csrf
-                        <div class="form-group">
-                            <div class="row justify-content-center mb-3">
-                                <label for="password" class="col-md-10 col-form-label">{{ __('Password') }}</label>
-                                <div class="col-10">
-                                    <input id="password" type="hidden"
-                                        class="form-control @error('password') is-invalid @enderror" name="password"
-                                        autocomplete="new-password" value="{{ $item->password }}">
-
-                                    <input id="new_password" type="password"
-                                        class="form-control @error('new_password') is-invalid @enderror"
-                                        name="new_password" autocomplete="new-password"
-                                        placeholder="Masukkan password baru">
-                                    <span class="text-danger">*password baru</span>
-                                    @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mb-3">
-                            <div class="col-10 text-end">
-                                <a href="/siswa" name="submit" class="btn btn-danger">Kembali</a>
-                                <button type="submit" name="submit" class="btn btn-success">Reset Password</button>
-                            </div>
-                        </div>
-                    </form> --}}
-
                     <form method="POST" action="/siswa/ubahProfile/{{ $item->id }}">
                         @csrf
 

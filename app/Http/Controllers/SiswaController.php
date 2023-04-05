@@ -137,7 +137,7 @@ class SiswaController extends Controller
             'email'=>request()->email,
             'alamat'=>request()->alamat,
             'telepon'=>request()->telepon,
-            'password'=>Hash::make($password),
+            'password'=>$password,
             'level'=>'siswa',
         ]);
         return redirect()->back()->with('success', 'Data berhasil disimpan');
