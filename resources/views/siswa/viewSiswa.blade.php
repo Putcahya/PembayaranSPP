@@ -17,7 +17,7 @@
                     <h4 class="title"><a href="">{{ $item->bulan }}</a></h4>
 
                    <p class="description mx-4 text-center">SPP Tahun : {{ $item->siswa->spp->tahun }}</p>
-                    <p class="description mx-4 text-center">Rp. {{ $item->siswa->spp->nominal }}</p>
+                    <p class="description mx-4 text-center">Rp. {{ number_format($item->siswa->spp->nominal) }}</p>
 
                     @if ($item->status == 'Dibayar')
                     <button type="button" class="btn btn-success btn-sm mt-3">Telah Dibayar</button>

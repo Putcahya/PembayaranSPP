@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pembayaran;
+use App\Models\Spp;
 use App\Models\Tagihan;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,8 +20,9 @@ class SiswaUserController extends Controller
     public function tampilanSiswa()
     {
         $data['pembayaran']= Pembayaran::with(['tagihan.siswa'])->where('id_tagihan', )->get();
-        $data['tagihan']= Tagihan::with(['siswa.spp'])->where('id_siswa', Auth::user()->id)->get();
-        return view('siswa.viewSiswa',$data );
+        $dat = User::select('id_spp')->where('id', Auth::user()->id)->first();
+        $data['tagihan']= Tagihan::with(['siswa.spp'])->where('id_siswa', Auth::user()->id)->where('tahun', $dat->id_spp)->get();
+        return view('siswa.viewSiswa',$data);
     }
     public function viewProfile($id)
     {
