@@ -105,6 +105,41 @@
         </div>
     </div>
 </div>
+
+<div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                        <thead>
+                            <tr class="text-center">
+                                <th width="5%">No</th>
+                                <th>Petugas</th>
+                                <th>Aksi</th>
+                                <th>Log</th>
+                                <th>Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $no =1; ?>
+                            @foreach ($log2 as $item)
+                            <tr>
+                                <td>{{ $no++ }}</td>
+                                <td>{{ $item->person }}</td>
+                                <td>{{ $item->aksi }}</td>
+                                <td>{{ $item->log }}</td>
+                                <td>{{ date('d F Y, H:i:s ', strtotime($item->created_at) ) }}</td>
+                                
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
 @elseif (Auth::user()->level == 'petugas')
 <div class="row clearfix">
     <div class="col-lg-12">
