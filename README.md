@@ -6,61 +6,94 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+<img src="{{ asset('/') }}images/logo.png" alt="Total Downloads">
+## Tentang Aplikasi Pembayaran SPP
 
-## About Laravel
+Aplikasi Pembayaran SPP adalah sebuah platform berbasis web yang dirancang untuk memudahkan proses pembayaran SPP (Sumbangan Pengembangan Pendidikan) bagi para siswa di sebuah sekolah. Aplikasi ini memberikan kemudahan bagi siswa dan pihak sekolah dalam mengelola pembayaran SPP secara efisien, aman, dan transparan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Fitur yang tersedia di Aplikasi Pembayaran SPP 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Manajemen Siswa: Aplikasi ini memungkinkan pihak sekolah untuk mengelola data siswa, termasuk informasi pribadi, kelas, dan status pembayaran SPP.
+- Pengelolaan Pembayaran SPP: Aplikasi ini memungkinkan siswa untuk melihat tagihan SPP yang harus dibayarkan.
+- Riwayat Pembayaran: Aplikasi ini menyimpan riwayat pembayaran SPP, sehingga siswa dan pihak sekolah dapat melacak status pembayaran dengan mudah.
+- Laporan Keuangan: Aplikasi ini menyediakan laporan keuangan yang dapat diakses oleh pihak sekolah, berisi informasi tentang jumlah pembayaran yang tertunda, dan riwayat pembayaran.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Cara Menggunakan Aplikasi Pembayaran SPP
+##### **Cara menggunakan Aplikasi Pembayaran SPP untuk Admin dan Petugas**
+- Admin / petugas login. 
+- Admin pilih menu petugas dan menginputkan data petugas.
+- Admin pilih menu kelas dan menginputkan data kelas.
+- Admin pilih menu spp dan menginputkan data spp.
+- Admin pilih menu siswa dan menginputkan data siswa.
+- Admin / Petugas pilih menu pembayaran.
+- Admin / Petugas pilih siswa dan cek tagihannya.
+- Admin / Petugas pilih bulan yang akan dibayar tagihannya.
+- Admin / Petugas menginputkan data pembayaran.
+- Admin / Petugas mencetak bukti pembayaran setiap bulan yang sudah dibayar SPP nya.
 
-## Learning Laravel
+##### **Cara menggunakan Aplikasi Pembayaran SPP untuk Siswa**
+- Siswa login.
+- Aplikasi tampil riwayat pembayaran SPP yang sudah dibayar dan tagihan SPP yang belum dibayar sesuai siswa yang login.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Teknologi Yang Digunakan
+**Berikut ini teknologi yang digunakan untuk membuat Aplikasi Pembayaran SPP :**
+- [Visual Sudio Code](https://code.visualstudio.com/download) - Text editor.
+- [XAMPP](https://www.apachefriends.org/download.html) - Web server.
+- [node.js](https://nodejs.org/en/download)
+- [git](https://git-scm.com/downloads) - Version Control System.
+- [Laravel](laravel.com ) - Framework PHP.
+- [Bootstrap](https://getbootstrap.com/) - Framework CSS.
+- [Composer](https://getcomposer.org/download/)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Instalasi Aplikasi Pembayaran SPP
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Instalasi Teknologi Yang Digunakan
+- Install [XAMPP](https://www.apachefriends.org/download.html) dan hidupkan Apache dan MYSQL.
+- Install [Node.js](https://nodejs.org/en/download) untuk menjalankan NPM (Node Package Manager).
+- Install [Composer](https://getcomposer.org/download/)
+- Install [Visual Sudio Code](https://code.visualstudio.com/download)
+- Install [Git](https://git-scm.com/downloads)
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### Clone repositori ini dengan cara
+- Buka file explore dan pilih letak folder dimana folder repositori ini akan disimpan
+- Klik kanan dan pilih *Git Bash Here*
+- Mulai clone repositori
+```
+git clone https://github.com/Putcahya/PembayaranSPP_UKK.git
+```
+- Pindah ke directori ke dalam folder PembayaranSPP_UKK
+```
+cd PembayaranSPP_UKK
+```
+- Menginstall composer ke project
+```
+composer install
+```
+- Menginstall NPM (Node Package Manager)
+```
+npm install
+```
+- Buka projrct di Text-Editor
+```
+code .
+```
+- Buatlah database
+- Konfigurasi file *.env*
+- Ubah DB_DATABASE pada file *.env* didalam folder PembayaranSPP_UKK untuk konfigurasi database sesuai nama database yang dibuat
+- Lakukan perintah migration 
+```
+php artisan migrate
+```
+- Ubah *id_kelas* dan *id_spp* di phpmyadmin menjadi *null*
+- Comment terlebih dahulu function created pada *UserObserver* agar tidak terjadi error
+- Lakukan perintah db:seed untuk mengisi data di database
+```
+php artisan db:seed
+```
+- Jalankan Aplikasi Pembayaran SPP
+```
+npm run dev
+```
+```
+php artisan serve
+```

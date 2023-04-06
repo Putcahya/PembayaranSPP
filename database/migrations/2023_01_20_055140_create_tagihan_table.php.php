@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('id_siswa')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('bulan');
+            $table->string('tahun');
             $table->enum('status',['Dibayar', 'Belum Dibayar']);
             $table->rememberToken();
             $table->timestamps();

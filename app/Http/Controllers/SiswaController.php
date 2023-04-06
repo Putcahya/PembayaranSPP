@@ -47,61 +47,219 @@ class SiswaController extends Controller
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Januari',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Februari',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Maret',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'April',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Mei',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Juni',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Juli',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Agustus',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'September',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Oktober',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'November',
+            'tahun'=>request()->id_spp,
             'status'=>'Belum Dibayar',
         ]);
         Tagihan::create([
             'id_siswa'=>$siswa_id,
             'bulan'=>'Desember',
+            'tahun'=>request()->id_spp,
+            'status'=>'Belum Dibayar',
+        ]);
+
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Januari',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Februari',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Maret',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'April',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Mei',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Juni',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Juli',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Agustus',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'September',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Oktober',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'November',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Desember',
+            'tahun'=>request()->id_spp+1,
+            'status'=>'Belum Dibayar',
+        ]);
+
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Januari',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Februari',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Maret',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'April',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Mei',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Juni',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Juli',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Agustus',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'September',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Oktober',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'November',
+            'tahun'=>request()->id_spp+2,
+            'status'=>'Belum Dibayar',
+        ]);
+        Tagihan::create([
+            'id_siswa'=>$siswa_id,
+            'bulan'=>'Desember',
+            'tahun'=>request()->id_spp+2,
             'status'=>'Belum Dibayar',
         ]);
         return redirect()->back()->with('success', 'Data berhasil disimpan');

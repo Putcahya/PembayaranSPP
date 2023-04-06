@@ -12,8 +12,10 @@ class TagihanController extends Controller
 {
     public function viewTagihan($id)
     {
-        $data['tagihan']= Tagihan::with(['siswa'])->where('id_siswa', $id)->get();
         $data['siswa']= User::where('id', $id)->get();
+        $dat = User::select('id_spp')->where('id', $id)->first();
+        $data['tagihan']= Tagihan::with(['siswa'])->where('id_siswa', $id)->where('tahun', $dat->id_spp)->get();
+
         return view('admin.viewTagihan', $data);
     }
     public function bayar(Request $request)
